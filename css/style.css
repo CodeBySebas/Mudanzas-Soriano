@@ -443,3 +443,68 @@ img {
     grid-template-columns: 1fr;
   }
 }
+/* ================================
+   CONTADOR ANIMADO
+   ================================ */
+.counters {
+  background: var(--blue);
+  padding: 52px 0;
+}
+
+.counters__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.counter-item {
+  padding: 0 24px;
+  position: relative;
+}
+
+/* Línea divisoria entre cada contador */
+.counter-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 52px;
+  background: rgba(255,255,255,0.2);
+}
+
+.counter-item i {
+  font-size: 30px;
+  color: rgba(255,255,255,0.65);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.counter-num {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  display: block;
+}
+
+.counter-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.72);
+  margin-top: 6px;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .counters__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .counter-item:not(:last-child)::after {
+    display: none;
+  }
+}
