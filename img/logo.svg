@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+
+  <!-- Caja de mudanza -->
+  <!-- Base de la caja -->
+  <rect x="10" y="40" width="60" height="50" rx="3"
+    fill="none" stroke="#1A3A5C" stroke-width="2.5"/>
+
+  <!-- Tapa izquierda abierta -->
+  <path d="M10 40 L25 20 L55 20 L40 40"
+    fill="none" stroke="#1A3A5C" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Tapa derecha abierta -->
+  <path d="M40 40 L55 20 L70 30 L70 40"
+    fill="none" stroke="#1A3A5C" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Relleno tapa izquierda -->
+  <path d="M10 40 L25 20 L55 20 L40 40"
+    fill="#1A56DB" opacity="0.15"/>
+
+  <!-- Línea del medio de la caja -->
+  <line x1="40" y1="40" x2="40" y2="90"
+    stroke="#1A3A5C" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- Texto principal -->
+  <text x="90" y="58"
+    font-family="'Barlow Condensed', Arial, sans-serif"
+    font-size="32" font-weight="700"
+    fill="#1A3A5C"
+    letter-spacing="0.5">
+    Mudanzas Soriano
+  </text>
+
+  <!-- Slogan -->
+  <text x="92" y="78"
+    font-family="'Barlow', Arial, sans-serif"
+    font-size="12" font-weight="600"
+    fill="#1A56DB"
+    letter-spacing="3">
+    SIEMPRE CONTIGO
+  </text>
+
+</svg>
