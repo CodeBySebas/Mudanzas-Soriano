@@ -553,3 +553,51 @@ img {
     grid-template-columns: 1fr;
   }
 }
+/* ================================
+   RESEÑAS
+   ================================ */
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.testi-card {
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: box-shadow var(--transition);
+}
+
+.testi-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.testi-card__stars {
+  color: #FBBF24;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.testi-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.testi-card__author {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+}
