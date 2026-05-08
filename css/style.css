@@ -258,6 +258,24 @@ img {
   padding: 90px 0 70px;
   position: relative;
   overflow: hidden;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Capa oscura encima de la foto para que el texto se lea bien */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 22, 40, 0.75);
+  z-index: 0;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
 }
 
 /* Círculo de luz azul decorativo arriba a la derecha */
