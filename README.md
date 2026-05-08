@@ -94,7 +94,7 @@ code .
 - [ ] Agregar fotos reales en la carpeta `img/`
 - [ ] Subir a Hostinger en staging
 - [ ] Conectar dominio `mudanzassoriano.cl`
-- [ ] Implementar en WordPress
+
 
 ---
 
